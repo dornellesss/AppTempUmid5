@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" text="center">NeedDigital</string>
+    <string name="gerar_planilha">Gerar Planilha</string>
+    <string name="cadastro_efetuado_com_sucesso">Cadastro efetuado com sucesso!</string>
+    <string name="email">Email:</string>
+    <string name="nome">Nome:</string>
+    <string name="alreads_signed_in_login">Alreads Signed in? login</string>
+    <string name="click_no_bot_o_scannear">Click no botão Scannear</string>
+</resources>

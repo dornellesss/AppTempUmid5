@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "763263351033",
+    "firebase_url": "https://apptempumid5.firebaseio.com",
+    "project_id": "apptempumid5",
+    "storage_bucket": "apptempumid5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763263351033:android:5aa2d585a3c1ec4c",
+        "android_client_info": {
+          "package_name": "com.app.apptempumid5.apptempumid5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763263351033-ifi6gvrvjnh2857m14l6d85eket74tdg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.apptempumid5.apptempumid5",
+            "certificate_hash": "2503797d9d040555f8ad12f19a1516c0799cbcc0"
+          }
+        },
+        {
+          "client_id": "763263351033-ksgg6s8o41e5vubqtnli6urg6lla3ac0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW5i3RDSdFeO-sNwMzDPmNeWz-PHXJxj0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763263351033-ksgg6s8o41e5vubqtnli6urg6lla3ac0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

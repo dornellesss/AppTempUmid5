@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.apptempumid5.apptempumid5.OnLineActivity">
+
+    <RelativeLayout
+        android:id="@+id/lay5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/cardview_light_background">
+
+        <ScrollView
+            android:id="@+id/sco1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txTitulo"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Sistema de Certificação Ambiental On Line!"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txTitulo2"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Efetua a escolha de Recebimento de Dados!"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <LinearLayout
+                        android:id="@+id/scroollHorizontalTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp">
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:text="Conectar via Boluetooh"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:text="Conectar via WIfi"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:text="Conectar via Internet"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TableRow
+                    android:id="@+id/tab1"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txEquipamento"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Equipamento:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdEquipamento"
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txCertificado"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Certificado:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdCertificado"
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab222"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txNumeroCertificado"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center"
+                        android:text="Número de Certificado:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdNumeroCertificado"
+                        android:layout_width="140dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginStart="-160dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txRefParaTxTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Verifique os dados recebidos de Temperatura"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txTemp12"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="230dp"
+                        android:layout_marginStart="-330dp"
+                        android:gravity="fill"
+                        android:text="Temperatura: "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdTemp1"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="-250dp"
+                        android:gravity="fill|center_horizontal"
+                        android:hint="Temp. 01"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/EdTemp2"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:gravity="fill_horizontal"
+                        android:hint="Temp. 02"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab41"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txTemp123"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="230dp"
+                        android:layout_marginStart="-330dp"
+                        android:gravity="fill"
+                        android:text="Temperatura: "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdTemp3"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="-250dp"
+                        android:gravity="fill|center_horizontal"
+                        android:hint="Temp. 03"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/EdTemp4"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:gravity="fill_horizontal"
+                        android:hint="Temp. 04"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txRefParaTxUmid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Verifique os dados recebido de Umidade"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/tab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txUmid12"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="230dp"
+                        android:layout_marginStart="-330dp"
+                        android:gravity="fill"
+                        android:text="Umidade: "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdUmid1"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="-250dp"
+                        android:gravity="fill|center_horizontal"
+                        android:hint="Umid. 01"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/EdUmid2"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:gravity="fill_horizontal"
+                        android:hint="Umid. 02"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab51"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txUmid123"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="230dp"
+                        android:layout_marginStart="-330dp"
+                        android:gravity="fill"
+                        android:text="Umidade: "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdUmid3"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="-250dp"
+                        android:gravity="fill|center_horizontal"
+                        android:hint="Umid. 03"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/EdUmid4"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:gravity="fill_horizontal"
+                        android:hint="Umid. 04"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab12A"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txResponsavel"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Responsável Técnico:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdResponsável"
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab12B"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txSetor"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Setor:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdSetor"
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab12C"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txEmail"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Email:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdEmail"
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab123C"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txObser"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Breve Relatório:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdObserv"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txDataHora"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="40dp"
+                        android:gravity="center_horizontal"
+                        android:text="Data e Hora de Verificação!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <TextClock
+                        android:layout_width="150dp"
+                        android:id="@+id/TextClock"
+                        android:layout_height="35dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="-40dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txResu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Validação de Valores!"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/tab22"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvResultado"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Resultado Temp1!"
+                        android:text="     °C"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvResultado1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:text="     %"
+                        android:hint="Resultado Umid 1!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab23"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvDescricao"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Parecer Temp1!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvDescricao1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Parecer Umid 1!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab234"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvAcao"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Situação de Temperatura!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvAcao1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Situação de Umidade 1!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab24"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <Button
+                        android:id="@+id/btCalcular"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/campus"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="CALCULAR"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txMenuBotao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="MENU"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <LinearLayout
+                        android:id="@+id/scroollHorizontalBotao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp">
+
+                        <Button
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:text="IMPRIMIR"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btn_enviar"
+                            android:onClick="CadastroLogin"
+                            android:text="SALVAR e ENVIAR"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btnLogout"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:text="LOGOUT"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:onClick="MenuTela"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:text="GERAR NOVA PLANILHA"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical"
+    tools:context="com.app.apptempumid5.apptempumid5.Seletiva2Activity">
+
+    <RelativeLayout
+        android:id="@+id/lay11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="casual"
+            android:text="Certificado Gerado !"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/lay10"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <ScrollView
+                android:id="@+id/lay90"
+                android:layout_width="match_parent"
+                android:layout_height="850dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:id="@+id/linear11"
+                    android:layout_width="match_parent"
+                    android:layout_height="660dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:id="@+id/txtConfirma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtConfirma1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_weight="1.07"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/Schowline123"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:id="@+id/scroollHorizontalBotao"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/btnSalveBD"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/campus"
+            android:onClick="telaPlanilha"
+            android:padding="5dp"
+            android:text="Certificar Planilha"
+            android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnGPlanilha"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/campus"
+                android:onClick="telaPlanilhaN"
+                android:padding="5dp"
+                android:text="Gerar Nova Planilha"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnG"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/campus"
+                android:onClick="telaMenu"
+                android:padding="5dp"
+                android:text="Retornar ao Menu"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

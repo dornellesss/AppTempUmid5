@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical"
+    tools:context="com.app.apptempumid5.apptempumid5.SeletivaActivity">
+
+    <RelativeLayout
+        android:id="@+id/lay5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:id="@+id/sco1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txTitulo"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Sistema de Certificação de Ambiental!"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab1"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txEquipamento"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Equipamento:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ediEquipamento"
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txCertificado"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Certificado:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ediCertificado"
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab222"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txNumeroCertificado"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center"
+                        android:text="Número de Certificado:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ediNumeCertificado"
+                        android:layout_width="140dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginStart="-150dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txRefParaTxTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Preencha os campos abaixo de Temperatura"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/tab224"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txCriterioAcaitacaoTemp"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center"
+                        android:text="Critério Aceitação:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdCriterioAceitacaoTemp"
+                        android:layout_width="140dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginStart="-160dp"
+                        android:gravity="left"
+                        android:hint="Digite o valor referêncial!"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab223"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txErroIM"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center"
+                        android:text="Erro +IM:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdErroImTemp"
+                        android:layout_width="140dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginStart="-160dp"
+                        android:gravity="left"
+                        android:hint="Digite o valor de erro aceitável!"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab22345"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txImIncertezaTemp"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center"
+                        android:text="IM Incerteza;"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdImIncertezaTemp"
+                        android:layout_width="140dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginStart="-160dp"
+                        android:gravity="left"
+                        android:hint="Digite o valor de erro aceitável!"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txTemp12"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="230dp"
+                        android:layout_marginStart="-330dp"
+                        android:gravity="fill"
+                        android:text="Temperatura: "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdTemp1"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="-250dp"
+                        android:gravity="fill|center_horizontal"
+                        android:hint="Digite Temp. 01"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/EdTemp2"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:gravity="fill_horizontal"
+                        android:hint="Digite Temp. 02"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab41"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txTemp123"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="230dp"
+                        android:layout_marginStart="-330dp"
+                        android:gravity="fill"
+                        android:text="Temperatura: "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdTemp3"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="-250dp"
+                        android:gravity="fill|center_horizontal"
+                        android:hint="Digite Temp. 03"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/EdTemp4"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:gravity="fill_horizontal"
+                        android:hint="Digite Temp. 04"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txRefParaTxUmid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Preencha os campos abaixo de Umidade"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/tab2245"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txCriterioAceitacaoUmid"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center"
+                        android:text="Critério Aceitação:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdCriterioAceitacaoUmid"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginStart="-160dp"
+                        android:gravity="left"
+                        android:hint="Digite o valor referêncial!"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab22356"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txErroImUmid"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center"
+                        android:text="Erro + IM:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdErroImUmid"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginStart="-160dp"
+                        android:gravity="left"
+                        android:hint="Digite o valor de erro aceitável!"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab223567"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txParaErroIMUmid"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center"
+                        android:text="IM Incerteza;"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdImIncertezaUmid"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginStart="-160dp"
+                        android:gravity="left"
+                        android:hint="Digite o valor de erro aceitável!"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txUmid12"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="230dp"
+                        android:layout_marginStart="-330dp"
+                        android:gravity="fill"
+                        android:text="Umidade: "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdUmid1"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="-250dp"
+                        android:gravity="fill|center_horizontal"
+                        android:hint="Digite Umid. 01"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/EdUmid2"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:gravity="fill_horizontal"
+                        android:hint="Digite Umid. 02"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab51"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txUmid123"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="230dp"
+                        android:layout_marginStart="-330dp"
+                        android:gravity="fill"
+                        android:text="Umidade: "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/EdUmid3"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginStart="-250dp"
+                        android:gravity="fill|center_horizontal"
+                        android:hint="Digite Umid. 03"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/EdUmid4"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:gravity="fill_horizontal"
+                        android:hint="Digite Umid. 04"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab12A"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txResponsavel"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Responsável Técnico:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ediResponsavel"
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-160dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab12B"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txPassworda"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Digite sua Senha:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edPassworda"
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-160dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab12C"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txEmail"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Email:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ediEmail"
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab123C"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txRelatorio"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="150dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="Breve Relatório:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ediRelatorio"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:gravity="left"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewDate"
+                        android:layout_width="150dp"
+                        android:layout_height="45dp"
+                        android:gravity="center_horizontal|center"
+                        android:text="TextView"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal">
+
+                <TextClock
+                    android:id="@+id/textClock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Hora "
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txResu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Validação de Valores de Temperatura!"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/tab22temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvResultadotemp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Resultado Temp1!"
+                        android:text="     °C"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvResultadotemp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:text="     °C"
+                        android:hint="Resultado Temp 2!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab23TEMP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvDescricaotemp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Parecer Temp1!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvDescricaotemp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Parecer Temp 2!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab234temp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvAcaotemp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Situação de Temp 1!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvAcaotemp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Situação de Temp 2!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab22temp5"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvResultadotemp3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Resultado Temp3!"
+                        android:text="     °C"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvResultadotemp4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:text="     °C"
+                        android:hint="Resultado Temp 4!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab23temp8"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvDescricaotemp3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Parecer Temp3!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvDescricaotemp4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Parecer temp 4!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab234tempe61"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvAcaotemp3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Situação de Temp 3!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvAcaotemp4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Situação de Temp 4!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txResuUmid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Validação de Valores de Umidade!"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/tab22umi"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvResultadoumid1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Resultado Umid 1!"
+                        android:text="     %"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvResultadoumid2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:text="     %"
+                        android:hint="Resultado Umid 2!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab23umid2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvDescricaoumid1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Parecer Umid 1!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvDescricaoumid2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Parecer Umid 2!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab234umi3"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvAcaoumid1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Situação de Umid 1!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvAcaoumid2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Situação de Umid 2!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab22umid5"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tvResultadoumid3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Resultado Umid 3!"
+                        android:text="     %"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvResultadoumid4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:text="     %"
+                        android:hint="Resultado Umid 4!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab23umid6"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvDescricaoumid3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Parecer Umid 3!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvDescricaoumid4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Parecer Umid 4!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab234umid7"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvAcaoumid3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:hint="Situação de Umid 3!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvAcaoumid4"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginStart="-180dp"
+                        android:hint="Situação de Umid 4!"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tab24"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_horizontal">
+                    <Button
+                        android:id="@+id/btCalcular"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/campus"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="CALCULAR"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txMenuBotao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="MENU"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <LinearLayout
+                        android:id="@+id/scroollHorizontalBotao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp">
+
+                        <Button
+                            android:id="@+id/btnSave"
+                            android:onClick="telaSeletiva2"
+                            android:text="VISUALIZAR PLANILHA"
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btnLogout"
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:text="RETORNAR AO MENU"
+                            android:onClick="telaSegund"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/btnNova"
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:onClick="MenuTela"
+                            android:background="@drawable/campus"
+                            android:padding="5dp"
+                            android:text="GERAR NOVA PLANILHA"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
